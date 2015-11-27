@@ -15,3 +15,7 @@
 	font-style: bolder;
 	font-size: 25px;
 }
+
+.panel {
+	border-color: black;
+}
