@@ -17,22 +17,29 @@ $( document ).ready(function() {
 
     $("div.newListing").remove();
 
-      var hotelNames =["Extended Stay America", "La Quinta", "Hampton Inn", "Hilton Garden Inn", "Holiday Inn", "Comfort Inn", "EconoLodge", "Motel 6", "Bates Motel", "Ramada", "Days Inn", "Super 8"];
-      var randName = hotelNames[Math.floor(Math.random() * hotelNames.length)];
+    var randNumber = 1 + Math.floor(Math.random() * 12);
 
-      var hotelCities = ["New York", "Tulsa", "Sarasota", "Camden", "Sacramento", "Orlando", "Minneapolis", "Little Rock", "Austin", "Seattle", "New Orleans", "Chicago", "Charlotte"]; 
-      var randCity = hotelCities[Math.floor(Math.random() * hotelCities.length)];
+    for (var i = 0; i < 12; i++) {
+    
+    if($("newListing").length < 12) {
 
-    $('<div>', { 
-          class: 'newListing panel-body'
-      }).append( $('<div>', { 
-          class: 'listName'
-      })).append( $('<div>', { 
-          class: 'listCity'
-      })).appendTo('#viewOnSearch');
-      $(".listCity").html(randCity);
-      $(".listName").html(randName);
+    var hotelNames =["Extended Stay America", "La Quinta", "Hampton Inn", "Hilton Garden Inn", "Holiday Inn", "Comfort Inn", "EconoLodge", "Motel 6", "Bates Motel", "Ramada", "Days Inn", "Super 8"];
+    var randName = hotelNames[Math.floor(Math.random() * hotelNames.length)];
 
+    var hotelCities = ["New York", "Tulsa", "Sarasota", "Camden", "Sacramento", "Orlando", "Minneapolis", "Little Rock", "Austin", "Seattle", "New Orleans", "Chicago", "Charlotte"]; 
+    var randCity = hotelCities[Math.floor(Math.random() * hotelCities.length)];
+
+      $('<div>', { 
+            class: 'newListing panel-body'
+        }).append( $('<div>', { 
+            class: 'listName'
+        })).append( $('<div>', { 
+            class: 'listCity'
+        })).appendTo('#viewOnSearch');
+        $(".listCity").html(randCity);
+        $(".listName").html(randName);
+
+    } }
 
   }); // End Search button click ============
 
