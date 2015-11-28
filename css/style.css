@@ -1,3 +1,11 @@
+.hideOnLoad {
+  display:none;
+}
+
+.hideOnSearch {
+  
+}
+
 .panel-title  {
 	text-align: center;
 }
