@@ -1,0 +1,21 @@
+.panel-title  {
+	text-align: center;
+}
+
+.panel-body {
+	text-align: center;
+}
+
+.panel-heading {
+	background-color: black;
+}
+
+.panel-title {
+	color: white;
+	font-style: bolder;
+	font-size: 25px;
+}
+
+.panel {
+	border-color: black;
+}
