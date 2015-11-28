@@ -4,80 +4,171 @@
 	<title>Hotel Website!!</title>
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha256-IF1P9CSIVOaY4nBb5jATvBGnxMn/4dB9JNTLqdxKN9w= sha512-UsfHxnPESse3RgYeaoQ7X2yXYSY5f6sB6UT48+F2GhNLqjbPhtwV2WCUQ3eQxeghkbl9PioaTOHNA+T0wNki2w==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/classic.css">
+  <link rel="stylesheet" type="text/css" href="css/classic.date.css">
 
 </head>
 <body>
 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Hotels</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      	<div class="col-md-offset-1">
+  	      <ul class="nav navbar-nav navbar-right">
+  	        <li><a href="#">Fill in later</a></li>
+  	        <li class="dropdown">
+  	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+  	          <ul class="dropdown-menu">
+  	            <li><a href="#">Add dropdown here</a></li>
+  	            <li><a href="#">Add dropdown here</a></li>
+  	            <li><a href="#">Add dropdown here</a></li>
+  	            <li role="separator" class="divider"></li>
+  	            <li><a href="#">Add a separated dropdown here</a></li>
+  	          </ul>
+  	        </li>
+  	      </ul>
+  	      <form class="navbar-form navbar-right" role="search">
+  	        <div class="form-group">
+  	          <input type="text" class="form-control" placeholder="Search for Hotels">
+  	        </div>
+  	        <button type="submit" class="btn btn-success">Search</button>
+  	      </form>
+  	     </div>
+  	    </div>
+  	  </div>
+  	</div>
+  </nav>
 
-<nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Hotels</a>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <form class="form-horizontal form-inline">
+              <div class="form-group">
+                <div class="col-md-4">
+                <label for="srch-city">City</label>
+                  <input type="text" class="form-control" id="srch-city" placeholder="New York, NY">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-4">
+                  <label for="srch-date1">Start</label>
+                  <input type="text" class="form-control datepicker" id="srch-date1" placeholder="01 January, 2016">
+                </div> 
+              </div>
+              <div class="form-group">
+                <div class="col-md-4">
+                  <label for="srch-date2">Return</label>
+                  <input type="text" class="form-control datepicker" id="srch-date2" placeholder="31 December, 2016">
+                </div>
+              </div>
+              <hr>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="checkbox-inline"><strong>Amenities</strong> <br>
+                    <input type="checkbox" name="srch-amenities" value="pool"> Pool<br>
+                    <input type="checkbox" name="srch-amenities" value="pets"> Allows pets<br>
+                    <input type="checkbox" name="srch-amenities" value="wifi"> Wifi<br>
+                    <input type="checkbox" name="srch-amenities" value="fridge"> Fridge<br>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="checkbox-inline"><strong>Rating</strong></label><br>
+                    <input type="radio" name="srch-rating" value="pool"> 
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <br>
+                    <input type="radio" name="srch-rating" value="pets">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      <br>
+                    <input type="radio" name="srch-rating" value="wifi">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      <br>
+                    <input type="radio" name="srch-rating" value="fridge"> 
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                      <br>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="checkbox-inline"><strong>Price</strong></label><br>
+                    <input type="radio" name="srch-price" value="0-50"> Under $50<br>
+                    <input type="radio" name="srch-price" value="50-70"> $50-$70<br>
+                    <input type="radio" name="srch-price" value="70-100"> $70-$100<br>
+                    <input type="radio" name="srch-price" value="100-plus"> Over $100<br>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-info">Search Now</button>
+            </form>
+          </div>
+        </div>
+        
+
+
+
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-    	<div class="col-md-offset-1">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Fill in later</a></li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Add dropdown here</a></li>
-	            <li><a href="#">Add dropdown here</a></li>
-	            <li><a href="#">Add dropdown here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Add a separated dropdown here</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	      <form class="navbar-form navbar-right" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search for Hotels">
-	        </div>
-	        <button type="submit" class="btn btn-success">Search</button>
-	      </form>
-	     </div>
-	    </div>
-	  </div>
-	</div>
-</nav>
+  	<div class="row" class="left-panel">
+  		<div class="col-md-3">
+  			<div class="panel">
+  			  <div class="panel-heading">
+  			    <p class="panel-title">Search Panel</p>
+  			  </div>
+  			  <div class="panel-body">
+  			    Advanced filter search options will go here, such as, price, cities, ammenities, raiting etc.
+  			  </div>
+  			</div> 
+  		</div>
+  		<div class="col-md-9">
+  			<div class="panel">
+  				<div class="panel-heading">
+  					<p class="panel-title">Your searched Hotels</p>
+  				</div>
+  				<div class="panel-body">
+  					List of hotels will be located here
+  				</div>
+  				<div class="panel-body">
+  					List of hotels will be located here
+  				</div>
+  				<div class="panel-body">
+  					List of hotels will be located here
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
 
-<div class="container-fluid">
-	<div class="row" class="left-panel">
-		<div class="col-md-3">
-			<div class="panel">
-			  <div class="panel-heading">
-			    <p class="panel-title">Search Panel</p>
-			  </div>
-			  <div class="panel-body">
-			    Advanced filter search options will go here, such as, price, cities, ammenities, raiting etc.
-			  </div>
-			</div> 
-		</div>
-		<div class="col-md-9">
-			<div class="panel">
-				<div class="panel-heading">
-					<p class="panel-title">Your searched Hotels</p>
-				</div>
-				<div class="panel-body">
-					List of hotels will be located here
-				</div>
-				<div class="panel-body">
-					List of hotels will be located here
-				</div>
-				<div class="panel-body">
-					List of hotels will be located here
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- <script type="text/javascript" src="js/ENTER YOUR OWN JS FILE LINK HERE"></script> -->
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- <script type="text/javascript" src="js/ENTER YOUR OWN JS FILE LINK HERE"></script> -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/picker.js"></script>
+  <script type="text/javascript" src="js/picker.date.js"></script>
 
 </body>
 </html>
