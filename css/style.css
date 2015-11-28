@@ -1,9 +1,14 @@
-.hideOnLoad {
-  display:none;
+
+.viewOnSearch {
+  display: block;
+}
+
+.hideUntilSearch {
+  display: none;
 }
 
 .hideOnSearch {
-  
+  display: none;
 }
 
 .panel-title  {

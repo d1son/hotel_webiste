@@ -120,7 +120,7 @@
                     <input type="radio" name="srch-price" value="100-plus"> Over $100<br>
                 </div>
               </div>
-              <button type="submit" class="btn btn-info">Search Now</button>
+              <button type="submit" class="btn btn-info" id="searchBtn">Search Now</button>
             </form>
           </div>
         </div>
@@ -142,8 +142,8 @@
   			</div> 
   		</div>
   		<div class="col-md-9">
-        <div class="hideOnSearch">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="hideOnSearch">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -198,7 +198,7 @@
             </a>
           </div>
         </div>
-  			<div class="panel hideOnLoad">
+  			<div class="panel hideUntilSearch" id="viewOnSearch">
   				<div class="panel-heading">
   					<p class="panel-title">Your searched Hotels</p>
   				</div>
