@@ -16,7 +16,7 @@
 }
 
 .panel-body {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .panel-heading {
@@ -31,4 +31,14 @@
 
 .panel {
 	border-color: black;
+}
+
+/* Hotel Listing Styles ============================================================================== */
+
+.newListing {
+  
+}
+
+.listName {
+  font-size: 24px;
 }
