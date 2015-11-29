@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
 
 // When Search button clicked ==============================================================
-  $(document).on('click', '#searchBtn', function () {
+  $(document).on('click', '#searchBtn','#searchBtn2', function () {
     $("#hideOnSearch").addClass("hideOnSearch"); // Hides carousel by applying class
     $('#viewOnSearch').show(); // Reveals search result panel
 
