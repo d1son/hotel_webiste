@@ -29,7 +29,7 @@ $( document ).ready(function() {
     var hotelCities = ["New York", "Tulsa", "Sarasota", "Camden", "Sacramento", "Orlando", "Minneapolis", "Little Rock", "Austin", "Seattle", "New Orleans", "Chicago", "Charlotte"]; 
     var randCity = hotelCities[Math.floor(Math.random() * hotelCities.length)];
 
-      $('<div>', { 
+      $('<a>', { 
             class: 'newListing panel-body'
         }).append( $('<div>', { 
             class: 'listName'
