@@ -45,91 +45,41 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
           <div class="panel-body">
             <form class="form-horizontal form-inline" id="srchForm">
               <div class="form-group">
-                <div class="col-md-4">
+                <div class="col-md-2 col-md-offset-3">
                 <label for="srch-city">City</label>
                   <input type="text" class="form-control" id="srch-city" placeholder="New York, NY">
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-md-4">
+                <div class="col-md-2 col-md-offset-3">
                   <label for="srch-date1">Start</label>
                   <input type="text" class="form-control datepicker" id="srch-date1" placeholder="01 January, 2016">
                 </div> 
               </div>
               <div class="form-group">
-                <div class="col-md-4">
+                <div class="col-md-2 col-md-offset-3">
                   <label for="srch-date2">Return</label>
                   <input type="text" class="form-control datepicker" id="srch-date2" placeholder="31 December, 2016">
                 </div>
               </div>
-              <hr>
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label class="checkbox-inline"><strong>Amenities</strong> <br>
-                    <input type="checkbox" name="srch-amenities" value="pool"> Pool<br>
-                    <input type="checkbox" name="srch-amenities" value="pets"> Allows pets<br>
-                    <input type="checkbox" name="srch-amenities" value="wifi"> Wifi<br>
-                    <input type="checkbox" name="srch-amenities" value="fridge"> Fridge<br>
-                  </label>
+              <div class="form-group">
+                <div class="col-md-2 col-md-offset-8">
+                <!-- Can't figure out how to align the search button without adding some kind of text to the label, just left "space" there to hold the place until we can figure something out -->
+                  <label>space</label>
+                  <input type="button" class="from-control btn btn-info" id="searchBtn" value="Search Now">
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label class="checkbox-inline"><strong>Rating</strong></label><br>
-                    <input type="radio" name="srch-rating" value="pool"> 
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <br>
-                    <input type="radio" name="srch-rating" value="pets">
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                      <br>
-                    <input type="radio" name="srch-rating" value="wifi">
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                      <br>
-                    <input type="radio" name="srch-rating" value="fridge"> 
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                      <br>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label class="checkbox-inline"><strong>Price</strong></label><br>
-                    <input type="radio" name="srch-price" value="0-50"> Under $50<br>
-                    <input type="radio" name="srch-price" value="50-70"> $50-$70<br>
-                    <input type="radio" name="srch-price" value="70-100"> $70-$100<br>
-                    <input type="radio" name="srch-price" value="100-plus"> Over $100<br>
-                </div>
-              </div>
-              <input type="button" class="btn btn-info" id="searchBtn" value="Search Now">
-            </form>
-          </div>
+            </form>  
+          </div>        
         </div>
-        
-
-
-
       </div>
     </div>
+
   	<div class="row" class="left-panel">
   		<div class="col-md-3">
   			<div class="panel">
@@ -137,10 +87,62 @@
   			    <p class="panel-title">Search Panel</p>
   			  </div>
   			  <div class="panel-body">
-  			    Advanced filter search options will go here, such as, price, cities, ammenities, raiting etc.
-  			  </div>
-  			</div> 
-  		</div>
+  			    <div class="col-md-3">
+              <div class="form-group">
+                <label class="checkbox-inline"><strong>Amenities</strong> <br>
+                  <input type="checkbox" name="srch-amenities" value="pool"> Pool<br>
+                  <input type="checkbox" name="srch-amenities" value="pets"> Allows pets<br>
+                  <input type="checkbox" name="srch-amenities" value="wifi"> Wifi<br>
+                  <input type="checkbox" name="srch-amenities" value="fridge"> Fridge<br>
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="checkbox-inline"><strong>Rating</strong></label><br>
+                  <input type="radio" name="srch-rating" value="pool"> 
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <br>
+                  <input type="radio" name="srch-rating" value="pets">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <br>
+                  <input type="radio" name="srch-rating" value="wifi">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <br>
+                  <input type="radio" name="srch-rating" value="fridge"> 
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    <br>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="checkbox-inline"><strong>Price</strong> <br>
+                  <input type="radio" name="srch-price" value="0-50"> Under $50<br>
+                  <input type="radio" name="srch-price" value="50-70"> $50-$70<br>
+                  <input type="radio" name="srch-price" value="70-100"> $70-$100<br>
+                  <input type="radio" name="srch-price" value="100-plus"> Over $100<br>
+                </label>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
   		<div class="col-md-9">
         <div id="hideOnSearch">
           <div id="carousel" class="carousel slide" data-ride="carousel">
